@@ -37,9 +37,9 @@ while total <= 30:
     driver.set_page_load_timeout(10)
     try:
         driver.get(url)
-        # driver.find_element_by_css_selector("a img").click()
-        # element_present = EC.presence_of_element_located((By.ID, 'containerTTMbox'))
-        # WebDriverWait(driver, 10).until(element_present)
+        driver.find_element_by_css_selector("a img").click()
+        element_present = EC.presence_of_element_located((By.ID, 'containerTTMbox'))
+        WebDriverWait(driver, 10).until(element_present)
     except Exception as e:
         print 'Encountered exception: {}'.format(e)
     finally:
