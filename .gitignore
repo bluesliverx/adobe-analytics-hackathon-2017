@@ -1,0 +1,5 @@
+*.iml
+.idea
+env
+debug.log
+license-data.csv
